@@ -3,7 +3,7 @@
 
 *All text and code copyright (c) 2016 by Alfonso Garcia-Caro. Used with permission.*
 
-*Original post dated 2016-11-27 available at http://fable.io/blog/Tree-shaking.html*
+*Original post dated 2016-11-30 available at http://fable.io/blog/Tree-shaking.html*
 
 **By Alfonso Garcia-Caro**
  
