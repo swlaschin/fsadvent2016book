@@ -1,4 +1,4 @@
-﻿# Functional Event Sourcing meets The Elm Architecture
+﻿# Functional Event Sourcing meets The Elm Architecture #
 
 *By Anthony Lloyd. Original post at : https://anthonylloyd.github.io/blog/2016/11/27/event-sourcing*
 
