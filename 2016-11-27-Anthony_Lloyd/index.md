@@ -1,7 +1,10 @@
 
 # Functional Event Sourcing meets The Elm Architecture #
 
-*By Anthony Lloyd. Original post at : https://anthonylloyd.github.io/blog/2016/11/27/event-sourcing*
+**By Anthony Lloyd**
+
+*Original post dated 2016-11-27 available at https://anthonylloyd.github.io/blog/2016/11/27/event-sourcing*
+*All text and code copyright (c) 2016 by Anthony Lloyd. Used with permission.* 
 
 One of the highlights of the year for me was the [farewell to FRP](http://elm-lang.org/blog/farewell-to-frp) post by Evan Czaplicki.
 For a long time, I've been looking for a simple functional alternative to the MVC UI models.
@@ -141,3 +144,4 @@ I would recommend functional event sourcing in any application where strong audi
 Linear event sourcing, optimistic concurrency and persisting each type to a single database table would be a natural starting point.
 
 Hopefully F# will get Santa's follow up present delivery project. Happy holidays!
+

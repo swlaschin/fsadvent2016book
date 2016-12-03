@@ -1,7 +1,10 @@
 
 # Introduction to Azure IoT with Fsharp #
 
-*By William Berry. Original post at: http://www.lucidmotions.net/2016/11/introduction-to-azure-iot-with-fsharp.html*
+**By William Berry** 
+
+*Original post dated 2016-11-28 available at http://www.lucidmotions.net/2016/11/introduction-to-azure-iot-with-fsharp.html*
+*All text and code copyright (c) 2016 by William Berry. Used with permission.*
 
 **Requirements:**
 
@@ -787,3 +790,4 @@ My final call to action, equally for those new and old to the language alike, is
 * Explore the Azure IoT Gateway SDK and compile a series of F# modules to run in the Gateway on Windows IoT Core
 * Create and app that will tap the IoT Hub Event Hub interface and pull off a sampling of messages using EventProcessorHost 
 * Test out the Cloud to Device Messaging, Device Management and Device Twin features of the Azure IoT SDK. 
+

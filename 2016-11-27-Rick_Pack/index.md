@@ -1,7 +1,10 @@
 
 # F# Data Visualization for a neophyte: CDC Open Data #
 
-*By Rick Pack. Original post at: https://rickpackblog.wordpress.com/2016/11/27/f-data-visualization-for-a-neophyte-cdc-open-data/*
+**By Rick Pack**
+ 
+*Original post dated 2016-11-27 available at https://rickpackblog.wordpress.com/2016/11/27/f-data-visualization-for-a-neophyte-cdc-open-data/*
+*All text and code copyright (c) 2016 by Rick Pack. Used with permission.*
 
 The following introductory post tells how I went from ignorance to reproducing in F# what I'll call the "Hospital Discharges from Diabetes by Year"
 graph from this [CDC (Centers for Disease Control) website](http://www.cdc.gov/diabetes/statistics/dmany/fig1.htm).
@@ -115,3 +118,4 @@ I would like to learn how to offset the title and I also plan to present a relat
 However, having joined the more F# experienced [Anthony Lloyd](https://anthonylloyd.github.io/blog/2016/11/27/event-sourcing) in the first day of blog writing for F# Advent 2016, I will count this a success:
 
 "If you do not see yourself as a winner, then you cannot perform as a winner." -- Zig Ziglar
+

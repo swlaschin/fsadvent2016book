@@ -1,7 +1,11 @@
 
 # Easy domain modelling with types #
 
-*By Mark Seemann. Original post at: http://blog.ploeh.dk/2016/11/28/easy-domain-modelling-with-types/*
+**By Mark Seemann**
+
+*Original post dated 2016-11-28 available at http://blog.ploeh.dk/2016/11/28/easy-domain-modelling-with-types/*
+*All text and code copyright (c) 2016 by Mark Seemann. Used with permission.*
+
 
 *Algebraic data types make domain modelling easy.*
 
