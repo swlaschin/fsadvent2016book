@@ -1,10 +1,12 @@
 
 # Introduction to Azure IoT with Fsharp #
 
-**By William Berry** 
+*All text and code copyright (c) 2016 by William Berry. Used with permission.*
 
 *Original post dated 2016-11-28 available at http://www.lucidmotions.net/2016/11/introduction-to-azure-iot-with-fsharp.html*
-*All text and code copyright (c) 2016 by William Berry. Used with permission.*
+
+**By William Berry** 
+
 
 **Requirements:**
 

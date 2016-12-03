@@ -1,10 +1,12 @@
 
 # Introducing Stream Processing in F# #
 
+*All text and code copyright (c) 2016 by Mikhail Shilkov. Used with permission.*
+
+*Original post dated 2016-11-29 available at http://mikhail.io/2016/11/introducing-stream-processing-in-fsharp/*
+
 **By Mikhail Shilkov**
  
-*Original post dated 2016-11-29 available at http://mikhail.io/2016/11/introducing-stream-processing-in-fsharp/*
-*All text and code copyright (c) 2016 by Mikhail Shilkov. Used with permission.*
 
 
 This post is opening a series of articles about data processing
