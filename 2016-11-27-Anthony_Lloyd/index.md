@@ -3,9 +3,9 @@
 
 **By Anthony Lloyd**
 
-*<sub>Original post dated 2016-11-27 available at https://anthonylloyd.github.io/blog/2016/11/27/event-sourcing</sub>*
+<sub>Original post dated 2016-11-27 available at https://anthonylloyd.github.io/blog/2016/11/27/event-sourcing</sub>
 
-*<sub>All text and code copyright (c) 2016 by Anthony Lloyd. Used with permission.</sub>* 
+<sub>All text and code copyright (c) 2016 by Anthony Lloyd. Used with permission.</sub> 
 
 One of the highlights of the year for me was the [farewell to FRP](http://elm-lang.org/blog/farewell-to-frp) post by Evan Czaplicki.
 For a long time, I've been looking for a simple functional alternative to the MVC UI models.
