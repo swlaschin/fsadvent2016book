@@ -3,8 +3,9 @@
 
 **By Anthony Lloyd**
 
-*Original post dated 2016-11-27 available at https://anthonylloyd.github.io/blog/2016/11/27/event-sourcing*
-*All text and code copyright (c) 2016 by Anthony Lloyd. Used with permission.* 
+*<sub>Original post dated 2016-11-27 available at https://anthonylloyd.github.io/blog/2016/11/27/event-sourcing</sub>*
+
+*<sub>All text and code copyright (c) 2016 by Anthony Lloyd. Used with permission.</sub>* 
 
 One of the highlights of the year for me was the [farewell to FRP](http://elm-lang.org/blog/farewell-to-frp) post by Evan Czaplicki.
 For a long time, I've been looking for a simple functional alternative to the MVC UI models.
@@ -24,7 +25,7 @@ A combined festive WPF application is developed to streamline Santa's workload. 
 
 ### Event
 
-``` 
+```fsharp 
 type EventID = EventID of time:DateTime * user:UserID
 ```
 
@@ -41,7 +42,7 @@ As well as being a unique identifier of the event the `EventID` also satisfies a
 
 ### Aggregate
 
-```
+```fsharp
 type 'Aggregate ID = Created of EventID
 
 type 'Aggregate Events = (EventID * 'Aggregate list1) list1
@@ -51,7 +52,7 @@ An aggregate is a collection of events that are bound together by a root entity.
 
 In the example application we have the following domain model. Each case represents a possible change to the aggregate.
 
-```
+```fsharp
 type Work = uint16
 type Age = byte
 type Behaviour = Good | Mixed | Bad
@@ -86,7 +87,7 @@ The rules for domain model schema migration and data serialization are
 
 ### Store
 
-```
+```fsharp
 type 'Aggregate MemoryStore =
     {
         Latest: Map<'Aggregate ID, 'Aggregate Events>
