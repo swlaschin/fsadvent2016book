@@ -2,7 +2,6 @@
 
 ### Introduction
 
-* [Donate](frontmatter/Donate.md)
 * [Acknowledgements](frontmatter/Acknowledgements.md)
 
 ### Nov 27th
