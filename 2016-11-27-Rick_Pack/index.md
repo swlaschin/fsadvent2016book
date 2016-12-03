@@ -1,5 +1,5 @@
 
-# F# Data Visualization for a neophyte -- CDC Open Data #
+# F# Data Visualization for a neophyte: CDC Open Data #
 
 *By Rick Pack. Original post at: https://rickpackblog.wordpress.com/2016/11/27/f-data-visualization-for-a-neophyte-cdc-open-data/*
 
