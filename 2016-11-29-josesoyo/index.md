@@ -116,9 +116,11 @@ Array.iter(fun _ -> <@ (DoStuffOpenCL A1 A2  amplitudes phases frequencies ws) @
 
 Here I show the CPU serial code, but it can be run in parallel with the use of `Array.Parallel.iter()`. The comparatives for my laptop (i7+Gforce GTX 960M) are:
 
-| FSCL: | Real: 00:00:11.043, CPU: 00:00:08.406 |
-| F#    | Real: 00:03:21.406, CPU: 00:03:21.812 | 
-| Using Array.Parallel.iter: | Real: 00:00:55.536, CPU: 00:04:54.671 |
+```
+FSCL:                | Real: 00:00:11.043, CPU: 00:00:08.406 |
+F#:                  | Real: 00:03:21.406, CPU: 00:03:21.812 | 
+Array.Parallel.iter: | Real: 00:00:55.536, CPU: 00:04:54.671 |
+```
 
 So using the GPU with FSCL it's been possible to accelerate the code x5 with respect to the parallel way on CPU,
 but it's important to remember that since the code is converted to OpenCL, the use is not restricted to GPU and can be run in many devices,

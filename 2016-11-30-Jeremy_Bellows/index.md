@@ -295,7 +295,7 @@ fsi SMSSpamDetector.fsx
 
 The final generation should have their scores printed to the console. This demonstrates the evolution process occurring but does not demonstrate the solutions ability to solve problems in our reality. To do so would require exposing the NeuralNets to a variety of problems over a large number of generations. It's also worthwhile to experiment with activation functions and learning algorithms.
 
-[Watch a video of recorded evolution !](https://www.youtube.com/embed/2ttXxpbn52Y)
+[Watch a video of recorded evolution!](https://www.youtube.com/embed/2ttXxpbn52Y)
 
 
 ## What's Next?
