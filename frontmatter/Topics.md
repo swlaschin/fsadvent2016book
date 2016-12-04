@@ -28,4 +28,4 @@ coming soon
 
 **Machine learning**
 
-coming soon
+* [NeuralFish - Evolving Neural Topologies in F#](../2016-11-30-Jeremy_Bellows/index.md)

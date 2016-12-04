@@ -3,7 +3,7 @@
 ### Introduction
 
 * [Acknowledgements](frontmatter/Acknowledgements.md)
-* [Topics](frontmatter/Topics.md)
+* [Topic Index](frontmatter/Topics.md)
 
 ### Nov 27th
 
@@ -18,10 +18,10 @@
 ### Nov 29th
 
 * [Introducing Stream Processing in F#](2016-11-29-Mikhail_Shilkov/index.md)
+* [Using OpenCL on F# via FSCL](2016-11-29-josesoyo/index.md)
 
 ### Nov 30th
 
 * [Tree Shaking with Fable](2016-11-30-Alfonso_Garcia-Caro/index.md)
-
-
+* [NeuralFish - Evolving Neural Topologies in F#](2016-11-30-Jeremy_Bellows/index.md)
 
