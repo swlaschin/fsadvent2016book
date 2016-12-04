@@ -99,7 +99,7 @@ Stores are the databases of event sourcing. They can be in memory, remote or dis
 
 Many different concurrency models are possible. In the example application we have linear event sourcing with optimistic concurrency
 which is the simplest and corresponds to most relational database applications.
-`
+
 More fine grained concurrency is possible and `Making` on `Elf` would be a good candidate as only the Santa process changes this.
 Advanced concurrency models are also possible with event sourcing where events are designed to commute such as [CRDTs](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type).
 These enable disconnected systems. Git is an example of a successful disconnected system.
