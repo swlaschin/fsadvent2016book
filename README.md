@@ -9,4 +9,6 @@ The book is free to download, but if you find it useful, please donate using one
 * <a href="https://supporters.eff.org/donate/" style="color:red">Donate to the EFF to help protect digital privacy and free expression</a>
 * <a href="https://www.paypal.com/uk/fundraiser/105888939759373249" style="color:red">Donate to the UK charity of your choice using PayPal Giving Fund</a>
 
-To share this book, please use this direct link: https://www.gitbook.com/book/swlaschin/fsadvent-2016/
+Please tweet your donation using the #FsAdvent tag so that we can judge if this has been a success.
+
+And to share this book, please use this direct link: https://www.gitbook.com/book/swlaschin/fsadvent-2016/
