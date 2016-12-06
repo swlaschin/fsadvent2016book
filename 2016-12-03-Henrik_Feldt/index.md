@@ -116,7 +116,7 @@ it.
 Run `vagrant ssh` to connect to the machine over Secure Shell (SSH). This is
 called "sshing" in common speech.
 
-![Vagrant SSH](vagrant-ssh.png).
+![Vagrant SSH](vagrant-ssh.jpg).
 
 ### The prompt
 
