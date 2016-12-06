@@ -24,7 +24,7 @@ Pension companies having to calculate liabilities is nothing new, and we already
 
 People often shun the big rewrite, but in our case, we were at a place where no one wanted to change the existing code in fear of what might happen. We were also using a language that was generating additional complexity instead of limiting it. So, for me at least, it was a no brainer.
 
-##Getting Data
+## Getting Data
 
 To compute anything we need to get some data into an appropriate model. Here we make extensive use of [Railway-oriented-programming](http://fsharpforfunandprofit.com/rop/),
 which enables us to streamline the error prone process of parsing data.
