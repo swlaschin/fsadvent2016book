@@ -28,7 +28,7 @@
 ### Dec 1st
 
 * [Context matters](2016-12-01-Steffen_Forkmann/index.md)
-* [Semantic Versioning .NET libraries and NuGet packages](2016-12-01-Ramón_Soto_Mathiesen/index.md)
+* [Semantic Versioning .NET libraries and NuGet packages](2016-12-01-Ramon_Soto_Mathiesen/index.md)
 
 ### Dec 2nd
 
