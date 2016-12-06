@@ -30,3 +30,9 @@
 * [Context matters](2016-12-01-Steffen_Forkmann/index.md)
 * [Semantic Versioning .NET libraries and NuGet packages](2016-12-01-Ramón_Soto_Mathiesen/index.md)
 
+### Dec 2nd
+
+* [A Host of Issues: Migrating from UserVoice To GitHub Issues with Canopy and OctoKit.net](2016-12-02-Chet_Husk/index.md)
+* [F# in Production](2016-12-02-Kristian_Schmidt/index.md)
+
+
