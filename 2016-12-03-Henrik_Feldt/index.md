@@ -116,7 +116,7 @@ it.
 Run `vagrant ssh` to connect to the machine over Secure Shell (SSH). This is
 called "sshing" in common speech.
 
-![Vagrant SSH](./screens/vagrant-ssh.png).
+![Vagrant SSH](vagrant-ssh.png).
 
 ### The prompt
 
@@ -530,7 +530,7 @@ you have improvement suggestions to this tutorial.
  [virtualbox-dl]: https://www.virtualbox.org/wiki/Downloads "VirtualBox can be downloaded from this link"
  [git-https-mitm-fix]: https://stackoverflow.com/questions/12561299/how-to-access-github-through-firewall-playing-man-in-the-middle-when-using-https "How to accept deep traffic inspection"
  [vagrant-vault]: https://github.com/haf/vagrant-vault "A repository that configured Hashicorp Vault in a cluster configuration"
- [latent-config-checker]: ./papers/latent-config-checker.pdf "Early Detection of Configuration Errors to Reduce Failure Damage"
- [simple-testing]: ./papers/simple-testing.pdf "Simple testing can prevent most critical failures"
+ [latent-config-checker]: https://github.com/haf/linux-intro-course/tree/master/papers/latent-config-checker.pdf "Early Detection of Configuration Errors to Reduce Failure Damage"
+ [simple-testing]: https://github.com/haf/linux-intro-course/tree/master/papers/simple-testing.pdf "Simple testing can prevent most critical failures"
  [vim-modes]: https://en.wikibooks.org/wiki/Learning_the_vi_Editor/Vim/Modes "The different modes in vim"
  [github-PR]: https://github.com/haf/linux-intro-course/pulls

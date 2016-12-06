@@ -126,7 +126,7 @@ For image loading I used the excellent [FFImageLoading](https://github.com/luber
 
 To show a map for the venue I used Xamarin.Forms.Maps control:
 
-![](map.jpg)
+![](map.jpeg)
 
 ## Summary
 
