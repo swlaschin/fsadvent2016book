@@ -1,4 +1,4 @@
-
+ï»¿
 # F# in Production #
 
 *All text and code copyright (c) 2016 by Kristian Schmidt. Used with permission.*
@@ -8,19 +8,19 @@
 **By Kristian Schmidt**
 
 
-What the most efficient way to get the F# community into the christmas spirit? Someone using F# in production, surely. So today I’m going to give a little intro to our latest project, and reflect a bit on the challenges we faced.
+What the most efficient way to get the F# community into the christmas spirit? Someone using F# in production, surely. So today I'm going to give a little intro to our latest project, and reflect a bit on the challenges we faced.
 
 ## Intro
 
-I work at [PFA Pension](https://www.pfa.dk/) in the actuarial modelling department, where our primary task is to calculate the total liabilities for the company’s insurance policies. The liability is the amount of money we need to set aside to be sure that we’re able to pay our obligations to our customers.
+I work at [PFA Pension](https://www.pfa.dk/) in the actuarial modelling department, where our primary task is to calculate the total liabilities for the company's insurance policies. The liability is the amount of money we need to set aside to be sure that we're able to pay our obligations to our customers.
 
-I have [previously spoken](http://www.kreutz.us/2016/01/20/slides-from-my-talk-at-mf-k/) about how we’ve used F# to calculate the value of individual contracts. This is the extension of that work, in which we consider entire policies consisting of multiple contracts. So where calculating the value of one contract was math heavy, this project’s focus is more on implementing business rules and taming the complexity of these, along with fleshing out the structure of the problem domain in types.
+I have [previously spoken](http://www.kreutz.us/2016/01/20/slides-from-my-talk-at-mf-k/) about how we've used F# to calculate the value of individual contracts. This is the extension of that work, in which we consider entire policies consisting of multiple contracts. So where calculating the value of one contract was math heavy, this project's focus is more on implementing business rules and taming the complexity of these, along with fleshing out the structure of the problem domain in types.
 
-I won’t be getting into too many specifics, but instead I’ll focus on self contained bits I think the community will find interesting.
+I won't be getting into too many specifics, but instead I'll focus on self contained bits I think the community will find interesting.
 
 ## The Existing Solution
 
-Pension companies having to calculate liabilities is nothing new, and we already had an existing solution in place. This was written in the SAS statistical programming language. For those of you that, thankfully, don’t know about it, SAS is a row-based data-processing language, where you write a function (a so called data-step) to process each row of a table. The main abstraction is a macro, which is just like a function, except it’s just directly inserted into your code. So you have to be careful not to use the same variable names from your macros in your other code. Oh, and did I mention that all variables are global?
+Pension companies having to calculate liabilities is nothing new, and we already had an existing solution in place. This was written in the SAS statistical programming language. For those of you that, thankfully, don't know about it, SAS is a row-based data-processing language, where you write a function (a so called data-step) to process each row of a table. The main abstraction is a macro, which is just like a function, except it's just directly inserted into your code. So you have to be careful not to use the same variable names from your macros in your other code. Oh, and did I mention that all variables are global?
 
 People often shun the big rewrite, but in our case, we were at a place where no one wanted to change the existing code in fear of what might happen. We were also using a language that was generating additional complexity instead of limiting it. So, for me at least, it was a no brainer.
 
@@ -29,7 +29,7 @@ People often shun the big rewrite, but in our case, we were at a place where no 
 To compute anything we need to get some data into an appropriate model. Here we make extensive use of [Railway-oriented-programming](http://fsharpforfunandprofit.com/rop/),
 which enables us to streamline the error prone process of parsing data.
 
-Let’s look at a little example.
+Let's look at a little example.
 
 
 ```fsharp
@@ -55,7 +55,7 @@ let example xStr yStr =
     }
 ```
     
-Here we’re able to contain the error handling logic in individual, small, functions and then compose them with our `data` computation expression,
+Here we're able to contain the error handling logic in individual, small, functions and then compose them with our `data` computation expression,
 which just makes sure none of the `let!` bindings return `Failure`, returning the first failure if there are any.
 
 Not only did this make for a relatively pleasant experience doing data parsing. This also gave us an incremental view of how much of the input
@@ -64,16 +64,16 @@ counting how many `Results` were `OK` vs `Failure`.
 
 We also took the same approach to handle possible errors in the liability calculations themselves.
 For each calculation, we call an external DLL several times, and this might throw an exception. If that happens, the exception is wrapped in the `Failure` case of `Result`,
-avoiding crashing the program. The advantage here is that whenever you run the program with a large workload, you can be sure it doesn’t crash halfway through,
+avoiding crashing the program. The advantage here is that whenever you run the program with a large workload, you can be sure it doesn't crash halfway through,
 and any errors that might pop up can be saved and analyzed later.
 
 ## Debugging made easy with the REPL
 
-Debugging idiomatic F# isn’t always a lot of fun. If you try to step through your program, it jumps back and forth between function definitions.
-And if you’re using custom computation expressions like us, you’re in for an incomprehensible ride through your code.
+Debugging idiomatic F# isn't always a lot of fun. If you try to step through your program, it jumps back and forth between function definitions.
+And if you're using custom computation expressions like us, you're in for an incomprehensible ride through your code.
 
 After a certain amount of time, you iron out all of the show stopping bugs, and debugging becomes a matter of understanding why the model outputs the numbers it does.
-To aid with this, what we’ve done is define a helper script that can load up a single policy and then run various debugging functions on it.
+To aid with this, what we've done is define a helper script that can load up a single policy and then run various debugging functions on it.
 Here [Deedle](http://bluemountaincapital.github.io/Deedle/) plays a big part, since we not only use its basic data frame functionality,
 but we also [convert our existing types to be displayed as a data frame](http://www.kreutz.us/2016/05/26/f-interactive-pretty-printing-with-deedle/).
 
@@ -83,17 +83,19 @@ Debugging in this way with the REPL is a huge timer saver, because all the data 
 
 Given that this is a re-write of an existing model, we can do a very thorough test wrt. the final results. These should simply match the output of the old model.
 
-As for unit testing, I’ve found myself just not writing that many. Partly because of the type system and immutability by default, but also because of how many of the business rules we implement are structured. A lot of cases are just: “if case A then multiply value by 5%, else multiply value by 3%”. So naturally, for a given function, I can write a test that tests if this holds up, but what have I really achieved here? I’m just implementing the same logic twice. If do things correctly, the test merely serves as a lock on existing results, and any legal change in the implementation will have me changing the test too. If I’ve misunderstood the rule, the test won’t help me catch the error because I’m also implementing the wrong test.
+As for unit testing, I've found myself just not writing that many. Partly because of the type system and immutability by default, but also because of how many of the business rules we implement are structured.
+A lot of cases are just: "if case A then multiply value by 5%, else multiply value by 3%".
+So naturally, for a given function, I can write a test that tests if this holds up, but what have I really achieved here? I'm just implementing the same logic twice. If do things correctly, the test merely serves as a lock on existing results, and any legal change in the implementation will have me changing the test too. If I've misunderstood the rule, the test won't help me catch the error because I'm also implementing the wrong test.
 
-It’s not like a sorting algorithm, where the test for correctness is vastly different from the algorithm, and there are many legal implementations which will pass tests.
+It's not like a sorting algorithm, where the test for correctness is vastly different from the algorithm, and there are many legal implementations which will pass tests.
 
-Comments are greatly appreciated here, as it’s a question I’ve been struggling with. Right now we rely mostly on a full model test, which can’t be run on our workstations, and therefore don’t get run as often as the unit tests.
+Comments are greatly appreciated here, as it's a question I've been struggling with. Right now we rely mostly on a full model test, which can't be run on our workstations, and therefore don't get run as often as the unit tests.
 
 ##Performance
 
-Performance matters. Even though you’re not doing real time processing of incoming requests, a better performing program is just easier to work with. In our case, being able to run the model 50 times instead of say, 10 times, a day makes us able to answer more questions about its behaviour, and provide more detailed answers to those questions.
+Performance matters. Even though you're not doing real time processing of incoming requests, a better performing program is just easier to work with. In our case, being able to run the model 50 times instead of say, 10 times, a day makes us able to answer more questions about its behaviour, and provide more detailed answers to those questions.
 
-First a little bit about the type of workload we have. We have a lot (can’t share specifics, unfortunately) of insurance policies that need a few different numbers calculated for each of them. The policies are completely independent, so the problem becomes an embarassingly parallel one. We run the model on a 64 core machine with 128 GB of RAM, so we’re able to keep a lot of data in memory, if need be.
+First a little bit about the type of workload we have. We have a lot (can't share specifics, unfortunately) of insurance policies that need a few different numbers calculated for each of them. The policies are completely independent, so the problem becomes an embarassingly parallel one. We run the model on a 64 core machine with 128 GB of RAM, so we're able to keep a lot of data in memory, if need be.
 
 ## (Im)mutability
 
@@ -101,14 +103,14 @@ Pretty much all data structures are immutable, except for a few key ones. Our ma
 which is just a labeled float array with a length somewhere between 1 and 120. We allocate on the order of XX millions of these every time we run the program.
 
 While a standard array is inherently mutable, we have defined the standard operators (+, -, *, /) for a `Cashflow` such that they create a new `Cashflow`
-with a new underlying array each time. So we get the benefits of immutability at the price of the developers having to know not to manually manipulate the underlying arrays. It’s not the guarantee you’d get from using a linked list, but in our case the trade off makes sense.
+with a new underlying array each time. So we get the benefits of immutability at the price of the developers having to know not to manually manipulate the underlying arrays. It's not the guarantee you'd get from using a linked list, but in our case the trade off makes sense.
 
-There’s no doubt we could achieve better performance by just using a few arrays per policy and manipulating them over and over again. But when you factor in the added development time for the inevitable bug hunting and having to write a test suite to test all sorts of weird interactions, we deemed it wasn’t worth it. Now that we’ve started using the model in production, I’m happy to say that it ended up being fast enough for our use.
+There's no doubt we could achieve better performance by just using a few arrays per policy and manipulating them over and over again. But when you factor in the added development time for the inevitable bug hunting and having to write a test suite to test all sorts of weird interactions, we deemed it wasn't worth it. Now that we've started using the model in production, I'm happy to say that it ended up being fast enough for our use.
 
 ## ToString()
 
 Our output is just a csv file with a bunch of numbers and identifiers in them. Some of these identifiers are just the `ToString` method
-of a discriminated union without any data attached. Starting out, I thought I’d be really smart and implemented `ToString()` like this:
+of a discriminated union without any data attached. Starting out, I thought I'd be really smart and implemented `ToString()` like this:
 
 ```fsharp
 type Example =
@@ -116,9 +118,9 @@ type Example =
     static member this.ToString() = sprintf "%A" this
 ```    
     
-The good part is that if you expand your DU here, you don’t have to touch the `ToString` method.
+The good part is that if you expand your DU here, you don't have to touch the `ToString` method.
 The bad part is that this ended up being a severe performance bottleneck in several cases!
-Turns out this isn’t so fast if you want to call the method millions of times. The fix was simple:
+Turns out this isn't so fast if you want to call the method millions of times. The fix was simple:
 
 ```fsharp
 type Example =
@@ -135,7 +137,7 @@ This change fixed all of our ToString-related performance issues.
 
 ## GC Stats
 
-Just for fun I thought I’d give you some numbers. Below you’ll see a table of the GC stats that [PerfView](https://github.com/Microsoft/perfview) generates.
+Just for fun I thought I'd give you some numbers. Below you'll see a table of the GC stats that [PerfView](https://github.com/Microsoft/perfview) generates.
 These stats were generated running the program on a 64 core machine with `CLR Startup Flags: CONCURRENT_GC, SERVER_GC`.
 Only the portion of the code that calculates stuff was profiled. The generation of output was skipped.
 
@@ -171,12 +173,12 @@ Total GC Pause: 34.794,0 msec
 Max GC Heap Size: 26.251,720 MB
 ```
 
-That’s a lot of allocations! 3 GB per second! The program ran for a bit over 2 minutes and allocated over 200 GB. The max heap size was 26 GB, so the vast majority of these allocs didn’t make it past gen 0. Normally we say gen 0 GCs are supposed to be fast, but I guess you can put pressure on those too, after all?
+That's a lot of allocations! 3 GB per second! The program ran for a bit over 2 minutes and allocated over 200 GB. The max heap size was 26 GB, so the vast majority of these allocs didn't make it past gen 0. Normally we say gen 0 GCs are supposed to be fast, but I guess you can put pressure on those too, after all?
 
-On one hand, the high performance guy in me wants to remove a ton of these allocations at the expense of code safety and development time, but right now we’re at a point where this is just good enough. The model is several times faster than our old solution, so at the moment everyone is praising performance. At the same time the development was a smooth experience, where most of the debugging time was spent figuring out what the old SAS code was really doing.
+On one hand, the high performance guy in me wants to remove a ton of these allocations at the expense of code safety and development time, but right now we're at a point where this is just good enough. The model is several times faster than our old solution, so at the moment everyone is praising performance. At the same time the development was a smooth experience, where most of the debugging time was spent figuring out what the old SAS code was really doing.
 
 ## Summary
 
-In closing, I just want to touch a bit on what I think made this project a success. It wasn’t profunctor optics. It was just the continued application of better types (DUs, records), immutability and better error handling (railway oriented programming). This allowed us to focus on the business logic instead of the technical stuff.
+In closing, I just want to touch a bit on what I think made this project a success. It wasn't profunctor optics. It was just the continued application of better types (DUs, records), immutability and better error handling (railway oriented programming). This allowed us to focus on the business logic instead of the technical stuff.
 
-And finally, a shout out to FAKE, Paket & F# Power Tools (we’re not on Code/Ionide …yet), which makes our lives easier every day.
+And finally, a shout out to FAKE, Paket & F# Power Tools (we're not on Code/Ionide ...yet), which makes our lives easier every day.
