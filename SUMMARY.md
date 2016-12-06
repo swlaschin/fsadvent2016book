@@ -35,4 +35,12 @@
 * [A Host of Issues: Migrating from UserVoice To GitHub Issues with Canopy and OctoKit.net](2016-12-02-Chet_Husk/index.md)
 * [F# in Production](2016-12-02-Kristian_Schmidt/index.md)
 
+### Dec 3rd
+
+* [A gentle introduction to programming networked services on linux](2016-12-03-Henrik_Feldt/index.md)
+
+### Dec 4th
+
+* [fck: Fake Construction Kit](2016-12-04-Jeremie_Chassaing/index.md)
+* [X-Platform Development With Xamarin.Forms And F#](2016-12-04-Phillip_Trelford/index.md)
 
