@@ -25,3 +25,8 @@
 * [Tree Shaking with Fable](2016-11-30-Alfonso_Garcia-Caro/index.md)
 * [NeuralFish - Evolving Neural Topologies in F#](2016-11-30-Jeremy_Bellows/index.md)
 
+### Dec 1st
+
+* [Context matters](2016-12-01-Steffen_Forkmann/index.md)
+* [Semantic Versioning .NET libraries and NuGet packages](2016-12-01-Ramón_Soto_Mathiesen/index.md)
+
