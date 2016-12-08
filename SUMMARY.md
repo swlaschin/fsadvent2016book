@@ -44,3 +44,16 @@
 * [fck: Fake Construction Kit](2016-12-04-Jeremie_Chassaing/index.md)
 * [X-Platform Development With Xamarin.Forms And F#](2016-12-04-Phillip_Trelford/index.md)
 
+
+### Dec 5th
+
+* [Using type providers to post slack messages](2016-12-05-Rachel_Reese/index.md)
+
+### Dec 6th
+
+* [Asterisk Game in F# and WPF](2016-12-06-Mark_Heath/index.md)
+
+### Dec 7th
+
+* [Describing images in your favorite human language](2016-12-07-Edgar_Sanchez/index.md)
+* [Distributed web applications in F# with WebSharper](2016-12-07-Andras_Janko/index.md)
