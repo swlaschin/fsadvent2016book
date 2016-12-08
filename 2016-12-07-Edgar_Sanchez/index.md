@@ -12,7 +12,7 @@
 Several months ago Microsoft published a [moving video](https://www.youtube.com/watch?v=R2mC-NUAmMk) about Saqib Shaikh love for talking computers,
 by all means watch it but here is the technical gist, at least as far as this post is concerned: cool sunglasses that take a picture and then talk back to you describing the image. 
 
-![Saqib Shaikh, software engineer and talking computers fan ](saqib.png)
+![Saqib Shaikh, software engineer and talking computers fan ](saqib.jpg)
 
 
 As an engineer, it was impossible not to ask yourself 'How did they do it?' and shortly after, as an F# fan, 'Can I do it in F#?'.

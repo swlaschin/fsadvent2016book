@@ -1,4 +1,4 @@
-
+ï»¿
 # Asterisk Game in F# and WPF #
 
 *All text and code copyright (c) 2016 by Mark Heath. Used with permission.*
@@ -9,7 +9,7 @@
 
 
 For my entry in the F# Advent Calendar we're going to port a simple game to F#.
-The game is called "Asterisk", and has very simple mechanics – you must progress through levels, avoiding hitting stars, and you can only go up or down.
+The game is called "Asterisk", and has very simple mechanics -- you must progress through levels, avoiding hitting stars, and you can only go up or down.
 With each new level, three more stars appear, until it is impossible to progress any further.
 
 It's based on a game I used to play for hours on my dad's BBC Micro, and I've implemented it a few times in various languages including C# WinForms,
@@ -179,7 +179,7 @@ So first of all, I decided to see if I could eliminate some of the mutable state
 a new game state was created, rather than the existing one being modified.
 
 So I came up with the following basic domain model. The `GameState` stores our current position, the direction we're headed and what level we're on.
-And we also model the possible game events that can happen – a timer tick or a keypress resulting in a change of direction.
+And we also model the possible game events that can happen -- a timer tick or a keypress resulting in a change of direction.
 Whenever a `GameEvent` occurs, we will generate a new `ameState`, but there will also be a `RenderAction` to apply to keep the UI in sync with the `GameState`.
 
 ```fsharp
