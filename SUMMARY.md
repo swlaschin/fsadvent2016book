@@ -66,4 +66,4 @@
 ### Dec 9th
 
 * [Build Yourself a Robo-Advisor in F#. Part I : Domain Modelling](2016-12-09-Doug_Bruce/index.md)
-* [myTrades.Analytics – a netstandard compatible .NET technical analysis library written in F#](2016-12-09-Gergely_Kalapos/index.md)
+* [myTrades.Analytics - a netstandard compatible .NET technical analysis library written in F#](2016-12-09-Gergely_Kalapos/index.md)
