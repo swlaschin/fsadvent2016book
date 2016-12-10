@@ -62,3 +62,8 @@
 
 * [How F# delighted this newbie while experimenting with distributed systems](2016-12-08-Hussam_Abu-Libdeh/index.md)
 * [RdKafka for F# Microservices](2016-12-08-Jonathan_Leaver/index.md)
+
+### Dec 9th
+
+* [Build Yourself a Robo-Advisor in F#. Part I : Domain Modelling](2016-12-09-Doug_Bruce/index.md)
+* [myTrades.Analytics – a netstandard compatible .NET technical analysis library written in F#](2016-12-09-Gergely_Kalapos/index.md)

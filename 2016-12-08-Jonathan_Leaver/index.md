@@ -3,7 +3,7 @@
 
 *All text and code copyright (c) 2016 by Jonathan Leaver. Used with permission.*
 
-*Original post dated 2016-12-07 available at https://j-alexander.github.io/entry/2016/12/08/rdkafka-for-fsharp-microservices*
+*Original post dated 2016-12-08 available at https://j-alexander.github.io/entry/2016/12/08/rdkafka-for-fsharp-microservices*
 
 **By Jonathan Leaver**
 
