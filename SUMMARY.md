@@ -67,3 +67,8 @@
 
 * [Build Yourself a Robo-Advisor in F#. Part I : Domain Modelling](2016-12-09-Doug_Bruce/index.md)
 * [myTrades.Analytics - a netstandard compatible .NET technical analysis library written in F#](2016-12-09-Gergely_Kalapos/index.md)
+
+### Dec 10th
+
+* [Implementing a persistent hash map](2016-12-10-Marten_Range/index.md)
+* [Parsing text in F#](2016-12-10-Erik_Schierboom/index.md)
