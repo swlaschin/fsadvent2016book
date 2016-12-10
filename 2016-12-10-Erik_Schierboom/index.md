@@ -925,7 +925,7 @@ You can see that the result of the parser is a tuple, with the first item being 
 **Parser: list of right operator/operand combinations**
 
 Now that we have a parser for a right operator/operand combination, the next step is to create a parser that can match one or more of those combinations.
-Once again, there is an existing parser that can do that: the ]many1 parser](http://www.quanttec.com/fparsec/reference/primitives.html#members.many1).
+Once again, there is an existing parser that can do that: the [many1 parser](http://www.quanttec.com/fparsec/reference/primitives.html#members.many1).
 This parser function takes another parser, and matches one of more instances of the supplied parser argument.
 
 Our initial attempt looked like this:
