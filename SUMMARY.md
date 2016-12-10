@@ -57,3 +57,8 @@
 
 * [Describing images in your favorite human language](2016-12-07-Edgar_Sanchez/index.md)
 * [Distributed web applications in F# with WebSharper](2016-12-07-Andras_Janko/index.md)
+
+### Dec 8th
+
+* [How F# delighted this newbie while experimenting with distributed systems](2016-12-08-Hussam_Abu-Libdeh/index.md)
+* [RdKafka for F# Microservices](2016-12-08-Jonathan_Leaver/index.md)
