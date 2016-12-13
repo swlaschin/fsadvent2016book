@@ -80,3 +80,5 @@
 * [Merry Monad Xmas](2016-12-11-Jeremy_Abbott/index.md)
 
 ### Dec 12th
+
+* [Some advice to F# beginners](2016-12-12-Pierre_Irrmann/index.md)
