@@ -52,6 +52,7 @@
 ### Dec 6th
 
 * [Asterisk Game in F# and WPF](2016-12-06-Mark_Heath/index.md)
+* [Using F# on both the frontend and the backend](2016-12-06-Daniel_Bachler/index.md)
 
 ### Dec 7th
 
@@ -72,3 +73,10 @@
 
 * [Implementing a persistent hash map](2016-12-10-Marten_Range/index.md)
 * [Parsing text in F#](2016-12-10-Erik_Schierboom/index.md)
+
+### Dec 11th
+
+* [An Introduction To Testing Suave WebParts](2016-12-11-Matt_Olson/index.md)
+* [Merry Monad Xmas](2016-12-11-Jeremy_Abbott/index.md)
+
+### Dec 12th
