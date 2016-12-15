@@ -87,3 +87,11 @@
 
 * [Building F# community in Czech Republic](2016-12-13-Roman_Provaznik/index.md)
 * [Working with SQL syntax trees in F#](2016-12-13-Isak_Sky/index.md)
+
+### Dec 14th
+
+* [The AsyncArrow](2016-12-14-Troy_Kershaw/index.md)
+
+### Dec 15th
+
+* [Running Suave in ASP.NET Core (and on top of Kestrel)](2016-12-15-Dustin_Moris_Gorski/index.md)

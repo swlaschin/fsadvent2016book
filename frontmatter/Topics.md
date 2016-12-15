@@ -18,6 +18,8 @@ If you are interested in certain topics only, this index may help:
 * [Easy domain modelling with types](../2016-11-28-Mark_Seemann/index.md)
 * [Parsing text in F#](../2016-12-10-Erik_Schierboom/index.md)
 * [Using type providers to post slack messages](../2016-12-05-Rachel_Reese/index.md)
+* [Working with SQL syntax trees in F#](../2016-12-13-Isak_Sky/index.md)
+* [The AsyncArrow](../2016-12-14-Troy_Kershaw/index.md)
 
 **Tools/Compiler/Build/Operations**
 
@@ -49,6 +51,7 @@ If you are interested in certain topics only, this index may help:
 * [Distributed web applications in F# with WebSharper](../2016-12-07-Andras_Janko/index.md)
 * [Using F# on both the frontend and the backend](../2016-12-06-Daniel_Bachler/index.md)
 * [X-Platform Development With Xamarin.Forms And F#](../2016-12-04-Phillip_Trelford/index.md)
+* [Running Suave in ASP.NET Core (and on top of Kestrel)](../2016-12-15-Dustin_Moris_Gorski/index.md)
 
 **Games**
 
@@ -58,3 +61,7 @@ If you are interested in certain topics only, this index may help:
 
 * [NeuralFish - Evolving Neural Topologies in F#](../2016-11-30-Jeremy_Bellows/index.md)
 * [Using OpenCL on F# via FSCL](../2016-11-29-josesoyo/index.md)
+
+**Community Building**
+
+* [Building F# community in Czech Republic](../2016-12-13-Roman_Provaznik/index.md)
