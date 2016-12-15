@@ -82,3 +82,8 @@
 ### Dec 12th
 
 * [Some advice to F# beginners](2016-12-12-Pierre_Irrmann/index.md)
+
+### Dec 13th
+
+* [Building F# community in Czech Republic](2016-12-13-Roman_Provaznik/index.md)
+* [Working with SQL syntax trees in F#](2016-12-13-Isak_Sky/index.md)
