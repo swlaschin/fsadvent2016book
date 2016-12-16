@@ -255,7 +255,7 @@ let rec fixTranslationCalls (qexpr:QueryExpression) : QueryExpression =
   match qexpr with
   | QueryExpression.QuerySpecification(forClause, fromClause, groupByClause, havingClause, offsetClause, orderByClause, selectElements, topRowFilter, uniqueRowFilter, whereClause) -> 
     let newSelectElements = List.map fixSelectElement selectElements
-    QueryExpression.QuerySpecification(forClause, fromClause, groupByClause, havingClause, offsetClause, orderByClause, selectElements, topRowFilter, uniqueRowFilter, whereClause) 
+    QueryExpression.QuerySpecification(forClause, fromClause, groupByClause, havingClause, offsetClause, orderByClause, newSelectElements, topRowFilter, uniqueRowFilter, whereClause)     
   | _ -> failwith "Not implemented"
 
 and fixSelectElement (sel:SelectElement) =
@@ -278,14 +278,18 @@ and fixPrimaryExpr (pexpr:PrimaryExpression) =
   | _ -> pexpr
 ```
 
-Here we're walking to the part of the the syntax tree we want we want to update, looking for calls to the translation function. Once we get to it, we replace it with a `subQueryWithLang`, passing in the `langParam`. How do we implement `subQueryWithLang`? We could build up the syntax tree manually, but that would be pretty tedious. Let's instead take a shortcut, parsing a an sql expression that is close, then pretty printing that in the REPL, and using that as a foundation.
+Here we're walking to the part of the the syntax tree we want we want to update, looking for calls to the translation function. Once we get to it, we replace it with a `subQueryWithLang`, passing in the `langParam`. How do we implement `subQueryWithLang`? We could build up the syntax tree manually, but that would be pretty tedious. Let's instead take a shortcut, parsing a sql expression that is close, then pretty printing that in the REPL, and using that as a foundation.
 
 ```fsharp
 let translationSubquerySql = """
 (select top 1 txt
- from (select txt, 0 as trank from translation_texts where translation_id = @id and lang = @lang
-	     union all
-		   select txt, 1 as trank from translation_texts where translation_id = @id and lang = 'en') T 
+ from (select txt, 0 as trank 
+       from translation_texts 
+       where translation_id = @id and lang = @lang
+       union all
+       select txt, 1 as trank 
+       from translation_texts 
+       where translation_id = @id and lang = 'en') T 
  order by trank)
 """
 
@@ -297,4 +301,14 @@ let translationSubquery =
 
 If you run that in the REPL, you will see a huge syntax tree. Now to implement the `subQueryWithLang` function, we'll just copy and paste that into our code, fix the errors (e.g. null, which should be None), and find the part of the syntax tree that needs to be replaced. [Here](https://gist.github.com/isaksky/cdcc9aea0e0d9379242fbb329a155b70) is the finished version (I put it in its own gist, because it is quite long).
 
-Now that we have a rewritten syntax tree, we are ready to print out the syntax tree so we can execute it. I have run out of time, so I'll show this in an update to this post.
+
+Now that we have a rewritten syntax tree, we are ready to print out the syntax tree so we can execute it. To do that, we can just call `Util.render`. So to put everything together:
+
+```fsharp
+let updatedQueryExpr = fixTranslationCalls queryExpr.Value
+let updatedSql = Util.render updatedQueryExpr
+val it : string =
+ "select id, (select top 1 txt from (select txt, 0 as trank from translation_texts where translation_id = id and lang = 'en-gb' union all select txt, 1 as trank from translation_texts where translation_id = @id and lang = 'en') T), (select top 1 txt from (select txt, 0 as trank from translation_texts where translation_id = id and lang = 'no-nb' union all select txt, 1 as trank from translation_texts where translation_id = @id and lang = 'en') T) from translations where id  in (@id1, @id2, @id3)"
+```
+
+Tada! There is our updated SQL with the function calls converted to subqueries. I hope you found have this post useful. 
