@@ -426,7 +426,8 @@ christmasRefs
 ```
 
 
-| Item1	| Item2
+| Item1	| Item2 |
+| ----	| ---- |
 | Luke.2.1	| Acts.11.28-Acts.11.28 |
 | Luke.2.1	| Matt.24.14-Matt.24.14 |
 | Luke.2.1	| Acts.25.21-Acts.25.21 |
@@ -454,7 +455,7 @@ byBook |> Seq.take 10 |> Util.Table
 ```
 
 
-| Item1	| Item2 | 
+| Item1	| Item2 |
 | Luke	    | 129  |
 | Matthew	| 115  |
 | Psalm     |  101 |
@@ -485,6 +486,7 @@ fromBookToBook
 
 
 | Item1            | Item2 |
+| ----	| ---- |
 | (Luke, Luke)       | 94 |
 | (Luke, Psalm) 	 | 72 |
 | (Matthew, Matthew) | 63 |
@@ -633,7 +635,7 @@ force.start();
 
 ![](d3_snapshot.png)
 
-*NOTE: This is a snapshot -- to see the live force layout graph in actions, visit the corresponding page for this post: http://blog.mavnn.co.uk/advent-2016/*
+*NOTE: This is a snapshot -- to see the graph work dynamically, visit the corresponding page for this post: http://blog.mavnn.co.uk/advent-2016/*
 
 And there it is. A nice force layout graph based on our F# data, displaying the properties you would expect. Matthew and Luke as the "source" nodes have settled somewhere near the centre, with books commonly referenced from both squeezed in between. An outer ring of books referenced infrequently or from only one of the other form the next ring, and then around the edges we have the books not referenced at all during the Christmas story.
 
