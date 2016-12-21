@@ -7,7 +7,7 @@
 
 *Original post dated 2016-12-17 available at http://kunjan.in/2016/12/epic-adventure-using-fsharp/*
 
-**Kunjan Dalal**
+**By Kunjan Dalal**
 
 
 This my second post of 2016. Sadly not much of writing this year. So, I need to cover up by this little longish post. So, grab your favorite coffee / tea before getting started.

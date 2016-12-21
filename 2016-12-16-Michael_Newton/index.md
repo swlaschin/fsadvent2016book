@@ -7,7 +7,7 @@
 
 *Original post dated 2016-12-16 available at http://blog.mavnn.co.uk/advent-2016/*
 
-**Michael Newton**
+**By Michael Newton**
 
 
 Each year I like to make my F# advent post centered around an aspect of the actual Christmas story, so this year I decided to look at the actual text of the Christmas story.
@@ -456,6 +456,7 @@ byBook |> Seq.take 10 |> Util.Table
 
 
 | Item1	| Item2 |
+| ---- | ---- |
 | Luke	    | 129  |
 | Matthew	| 115  |
 | Psalm     |  101 |

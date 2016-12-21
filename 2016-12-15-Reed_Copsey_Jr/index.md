@@ -7,7 +7,7 @@
 
 *Original post dated 2016-12-15 available at http://reedcopsey.com/2016/12/15/christmas-trees-in-wpf-2016-edition/*
 
-**Reed Copsey, Jr.**
+**By Reed Copsey, Jr.**
 
 
 Last year, I wrote about making [Christmas Trees in WPF using FSharp.ViewModule](http://reedcopsey.com/2015/12/09/christmas-trees-in-wpf-using-fsharp-viewmodule/).  At the time, I was excited being able to demonstrate how FSharp.ViewModule could make typical MVVM much more functional feeling.  This year, for my [F# Advent Calendar contribution](https://sergeytihon.wordpress.com/tag/fsadvent/), I want to demonstrate how [Gjallarhorn.Binding](https://github.com/ReedCopsey/Gjallarhorn) can serve as a replacement, and help create a WPF application with a design that is clean, functional, and most importantly, simple.
