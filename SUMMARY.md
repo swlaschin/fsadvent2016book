@@ -105,3 +105,4 @@
 ### Dec 17th
 
 * [Epic Adventure using F#](2016-12-17-Kunjan_Dalal/index.md)
+* [Accessing native C libraries on Linux with F# and .Net Core](2016-12-17-Jan_Schiefer/index.md)
