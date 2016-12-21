@@ -111,3 +111,7 @@
 
 * [Creating a tutorial from Git repo](2016-12-19-Tomasz_Heimowski/index.md)
 * [Data structures and algorithms – helping Santa Claus find his road to San Francisco](2016-12-19-Tomasz_Jaskula/index.md)
+
+### Dec 20th
+
+* [reF#actoring: rewriting an actor in F#](2016-12-20-Vagif_Abilov/index.md)
