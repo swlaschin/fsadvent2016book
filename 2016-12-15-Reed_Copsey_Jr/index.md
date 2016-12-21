@@ -3,7 +3,7 @@
 
 # Christmas Trees in WPF, 2016 Edition #
 
-*All text and code copyright (c) 2016 by Reed Copsey, Jr.. Used with permission.*
+*All text and code copyright (c) 2016 by Reed Copsey, Jr. Used with permission.*
 
 *Original post dated 2016-12-15 available at http://reedcopsey.com/2016/12/15/christmas-trees-in-wpf-2016-edition/*
 

@@ -98,3 +98,6 @@
 * [Running Suave in ASP.NET Core (and on top of Kestrel)](2016-12-15-Dustin_Moris_Gorski/index.md)
 * [Christmas Trees in WPF, 2016 Edition](2016-12-15-Reed_Copsey_Jr/index.md)
 
+### Dec 16th
+
+* [Advent 2016](2016-12-16-Michael_Newton/index.md)
