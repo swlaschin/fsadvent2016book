@@ -11,4 +11,11 @@ The book is free to download, but if you find it useful, please donate using one
 
 Please tweet your donation using the #FsAdvent tag so that we can judge if this has been a success.
 
+You can read the book in these formats:
+
+* Read online: https://www.gitbook.com/read/book/swlaschin/fsadvent-2016
+* Mobi (Kindle): https://www.gitbook.com/download/mobi/book/swlaschin/fsadvent-2016
+* ePub: https://www.gitbook.com/download/epub/book/swlaschin/fsadvent-2016
+* PDF: https://www.gitbook.com/download/pdf/book/swlaschin/fsadvent-2016
+
 And to share this book, please use this direct link: https://www.gitbook.com/book/swlaschin/fsadvent-2016/
