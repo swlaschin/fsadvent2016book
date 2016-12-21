@@ -53,6 +53,7 @@
 ### Dec 6th
 
 * [Asterisk Game in F# and WPF](2016-12-06-Mark_Heath/index.md)
+* [Using F# on both the frontend and the backend](2016-12-06-Daniel_Bachler/index.md)
 
 ### Dec 7th
 
@@ -73,3 +74,25 @@
 
 * [Implementing a persistent hash map](2016-12-10-Marten_Range/index.md)
 * [Parsing text in F#](2016-12-10-Erik_Schierboom/index.md)
+
+### Dec 11th
+
+* [An Introduction To Testing Suave WebParts](2016-12-11-Matt_Olson/index.md)
+* [Merry Monad Xmas](2016-12-11-Jeremy_Abbott/index.md)
+
+### Dec 12th
+
+* [Some advice to F# beginners](2016-12-12-Pierre_Irrmann/index.md)
+
+### Dec 13th
+
+* [Building F# community in Czech Republic](2016-12-13-Roman_Provaznik/index.md)
+* [Working with SQL syntax trees in F#](2016-12-13-Isak_Sky/index.md)
+
+### Dec 14th
+
+* [The AsyncArrow](2016-12-14-Troy_Kershaw/index.md)
+
+### Dec 15th
+
+* [Running Suave in ASP.NET Core (and on top of Kestrel)](2016-12-15-Dustin_Moris_Gorski/index.md)
