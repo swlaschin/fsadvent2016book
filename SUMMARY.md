@@ -106,3 +106,8 @@
 
 * [Epic Adventure using F#](2016-12-17-Kunjan_Dalal/index.md)
 * [Accessing native C libraries on Linux with F# and .Net Core](2016-12-17-Jan_Schiefer/index.md)
+
+### Dec 19th
+
+* [Creating a tutorial from Git repo](2016-12-19-Tomasz_Heimowski/index.md)
+* [Data structures and algorithms – helping Santa Claus find his road to San Francisco](2016-12-19-Tomasz_Jaskula/index.md)
