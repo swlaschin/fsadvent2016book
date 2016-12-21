@@ -633,7 +633,7 @@ force.start();
 
 ![](d3_snapshot.png)
 
-*NOTE: This is a snapshot -- to see the live force layout graph in actions, visit the corresponding page for this post: http://blog.mavnn.co.uk/advent-2016/ *
+*NOTE: This is a snapshot -- to see the live force layout graph in actions, visit the corresponding page for this post: http://blog.mavnn.co.uk/advent-2016/*
 
 And there it is. A nice force layout graph based on our F# data, displaying the properties you would expect. Matthew and Luke as the "source" nodes have settled somewhere near the centre, with books commonly referenced from both squeezed in between. An outer ring of books referenced infrequently or from only one of the other form the next ring, and then around the edges we have the books not referenced at all during the Christmas story.
 

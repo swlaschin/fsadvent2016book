@@ -101,3 +101,7 @@
 ### Dec 16th
 
 * [Advent 2016](2016-12-16-Michael_Newton/index.md)
+
+### Dec 17th
+
+* [Epic Adventure using F#](2016-12-17-Kunjan_Dalal/index.md)
