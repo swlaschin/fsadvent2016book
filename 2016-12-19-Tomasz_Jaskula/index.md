@@ -352,8 +352,8 @@ The node 5 has a value of 20 which is correct. We can move to more serious step.
 
 The next step is to try it on the real world data. After some googling I found interesting data used by [9th DIMACS Implementation Challenge - Shortest Paths](http://www.dis.uniroma1.it/challenge9/competition.shtml). I used California and Nevada datasets with the following properties:
 
-* # of nodes 1 890 815
-* # of edges 4 657 742
+* Number of nodes 1,890,815
+* Number of edges 4,657,742
 
 This will be more challenging that 6 node example from wikipedia. Before running the sample I made a small change to my algorithm to ease the data conversion from the data set files. I'm not using my `Graph` type but a simple `Dictionary<int, Vertex>`.
 

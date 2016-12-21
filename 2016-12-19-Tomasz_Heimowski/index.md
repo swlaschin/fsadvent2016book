@@ -11,7 +11,7 @@
 
 What if author of a programming book could maintain his content and related code in the same place? In this entry I'll share with you my experimental idea for code-heavy F# tutorials.
 
-*This post is part of the F# Advent Calendar 2016 initiative - make sure to go check out rest of posts as well. I'd like to thank Sergey Tihon for organising F# Advent. Previous edition of the event gave birth to this blog, encouraging me to write [my first post ever].*
+*This post is part of the F# Advent Calendar 2016 initiative - make sure to go check out rest of posts as well. I'd like to thank Sergey Tihon for organising F# Advent. Previous edition of the event gave birth to this blog, encouraging me to write [my first post ever](http://theimowski.com/blog/2015/12-21-property-based-testing-xslt/index.html).*
 
 ## Motivation
 
