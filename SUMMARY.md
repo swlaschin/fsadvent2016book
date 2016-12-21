@@ -115,3 +115,8 @@
 ### Dec 20th
 
 * [reF#actoring: rewriting an actor in F#](2016-12-20-Vagif_Abilov/index.md)
+
+### Dec 21st
+
+* [The Traveling Santa Problem… a Neural Network solution](2016-12-21-Riccardo_Terrell/index.md)
+* [Solidifying Releases with FAKE (F# MAKE)](2016-12-21-Elastic_Inc/index.md)

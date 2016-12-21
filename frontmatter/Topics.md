@@ -34,6 +34,7 @@ If you are interested in certain topics only, this index may help:
 * [Semantic Versioning .NET libraries and NuGet packages](../2016-12-01-Ramon_Soto_Mathiesen/index.md)
 * [Context matters](../2016-12-01-Steffen_Forkmann/index.md)
 * [Creating a tutorial from Git repo](../2016-12-19-Tomasz_Heimowski/index.md)
+* [Solidifying Releases with FAKE (F# MAKE)](../2016-12-21-Elastic_Inc/index.md)
 
 **Architecture/Microservices/Actors/Cloud/IoT**
 
@@ -70,6 +71,7 @@ If you are interested in certain topics only, this index may help:
 * [NeuralFish - Evolving Neural Topologies in F#](../2016-11-30-Jeremy_Bellows/index.md)
 * [Using OpenCL on F# via FSCL](../2016-11-29-josesoyo/index.md)
 * [Data structures and algorithms – helping Santa Claus find his road to San Francisco](../2016-12-19-Tomasz_Jaskula/index.md)
+* [The Traveling Santa Problem… a Neural Network solution](../2016-12-21-Riccardo_Terrell/index.md)
 
 **Community Building**
 
