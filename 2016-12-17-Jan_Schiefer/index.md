@@ -68,7 +68,7 @@ sudo apt-get install librtlsdr-dev
 
 This will pull in all the relevant dependencies, notably libusb.
 
-OK, so what did we just install? This is a C libary we are talking about, so we are looking for an include file (`/usr/include/rtl-sdr.h` on my system), and a library (for me it is `/usr/lib/x86_64-linux-gnu/librtlsdr.so`). Oh, and as we are talking to external hardware, the permissions need to be set right, which is often done through `/etc/udev`. In my case, the package manager took care of this. If you have permission trouble with access to the hardware, check the udev configuration.
+OK, so what did we just install? This is a C library we are talking about, so we are looking for an include file (`/usr/include/rtl-sdr.h` on my system), and a library (for me it is `/usr/lib/x86_64-linux-gnu/librtlsdr.so`). Oh, and as we are talking to external hardware, the permissions need to be set right, which is often done through `/etc/udev`. In my case, the package manager took care of this. If you have permission trouble with access to the hardware, check the udev configuration.
 
 And while this article is about Linux, librtlsdr-dev and its dependencies are also available to install via Brew on macOS, and if you do that, all the code in this post will work the same way on your Mac. I didn't try Windows (the installation of libusb and librtlsdr is a little more involved there), but it shouldn't be too hard to get it to work on Windows also.
 
