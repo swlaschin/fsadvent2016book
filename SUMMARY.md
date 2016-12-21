@@ -48,6 +48,7 @@
 ### Dec 5th
 
 * [Using type providers to post slack messages](2016-12-05-Rachel_Reese/index.md)
+* [Functional approaches to dependency injection](2016-12-05-Scott_Wlaschin/index.md)
 
 ### Dec 6th
 

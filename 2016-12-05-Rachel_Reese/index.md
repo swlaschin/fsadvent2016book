@@ -1,5 +1,5 @@
 
-# Using type providers to post slack messages. #
+# Using type providers to post slack messages #
 
 *All text and code copyright (c) 2016 by Rachel Reese. Used with permission.*
 
