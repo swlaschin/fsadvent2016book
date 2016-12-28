@@ -128,4 +128,7 @@
 ### Dec 23rd
 
 * [Advent with a Star](2016-12-23-Carsten_Konig/index.md)
+* [About Expandable F# Compiler project](2016-12-23-kekyo2/index.md)
+
+
 
