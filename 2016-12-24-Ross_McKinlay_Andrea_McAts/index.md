@@ -6,7 +6,7 @@
 
 *All text and code copyright (c) 2016 by Ross McKinlay + Andrea McAts. Used with permission.*
 
-*Original post dated 2016-12-23 available at https://github.com/ChipmunkHand/ChipmunkHand/blob/master/blog/psx.md*
+*Original post dated 2016-12-24 available at https://github.com/ChipmunkHand/ChipmunkHand/blob/master/blog/psx.md*
 
 **By Ross McKinlay + Andrea McAts**
 

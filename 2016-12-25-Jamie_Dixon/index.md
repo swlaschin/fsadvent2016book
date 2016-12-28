@@ -6,7 +6,7 @@
 
 *All text and code copyright (c) 2016 by Jamie Dixon. Used with permission.*
 
-*Original post dated 2016-12-23 available at https://jamessdixon.wordpress.com/2016/12/25/age-and-sex-analysis-of-microsoft-usa-mvps/*
+*Original post dated 2016-12-25 available at https://jamessdixon.wordpress.com/2016/12/25/age-and-sex-analysis-of-microsoft-usa-mvps/*
 
 **By Jamie Dixon**
 
