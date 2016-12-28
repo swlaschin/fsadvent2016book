@@ -190,8 +190,6 @@ match data with
 
 Here we state that the byte array must be 5 bytes long, we don't care what the first byte is, the second must match that of a digital pad. The third must equal 0x5A and then the final two bytes represent state of the 16 digital buttons ...Nice!
 
-![](images/nice.gif)
-
 ###Array Comprehensions
 
 This was mentioned earlier, but now we are going to combine them with the functions from the chip that allow us the send SPI data. The function is called `bcm2835_spi_transfer` which accepts a byte to send and returns the byte that it recieved in response.  Since the bytes need to be reversed, we can wrap this in a friendler function for our particular need
