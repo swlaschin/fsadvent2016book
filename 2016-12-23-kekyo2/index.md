@@ -18,7 +18,7 @@ I’m interesting to C#, LINQ, F#, IL and metaprogramming. I know about what/how
 
 If you want contact to me, please use [twitter: @kekyo2](https://twitter.com/kekyo2) or [gitter: kekyo/public](https://gitter.im/kekyo/public)
 
-# Sorry I have poor English, this post is very challenging for me :)
+* *Sorry I have poor English, this post is very challenging for me :)*
 
 Currently, I’m developing an alternate compiler for F#. This is not meaning I’m compiler specialist :) This project uses the [“F# Compiler Service.”](http://fsharp.github.io/FSharp.Compiler.Service/index.html)
 
