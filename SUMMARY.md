@@ -130,5 +130,10 @@
 * [Advent with a Star](2016-12-23-Carsten_Konig/index.md)
 * [About Expandable F# Compiler project](2016-12-23-kekyo2/index.md)
 
+### Dec 24th
+
+* [The magic of type providers](2016-12-24-Roman_Nevolin/index.md)
+
+
 
 
