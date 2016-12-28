@@ -120,3 +120,7 @@
 
 * [The Traveling Santa Problem… a Neural Network solution](2016-12-21-Riccardo_Terrell/index.md)
 * [Solidifying Releases with FAKE (F# MAKE)](2016-12-21-Elastic_Inc/index.md)
+
+### Dec 22nd
+
+* [Hello fable-import-sharepoint](2016-12-22-David_Podhola/index.md)
