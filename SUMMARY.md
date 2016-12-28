@@ -124,3 +124,8 @@
 ### Dec 22nd
 
 * [Hello fable-import-sharepoint](2016-12-22-David_Podhola/index.md)
+
+### Dec 23rd
+
+* [Advent with a Star](2016-12-23-Carsten_Konig/index.md)
+
