@@ -135,6 +135,9 @@
 * [The magic of type providers](2016-12-24-Roman_Nevolin/index.md)
 * [When Playstation meets F\#, PSX |> Pi](2016-12-24-Ross_McKinlay_Andrea_McAts/index.md)
 
+### Dec 25th
+
+* [Age and Sex Analysis Of Microsoft USA MVPs](2016-12-25-Jamie_Dixon/index.md)
 
 
 
