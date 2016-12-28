@@ -138,6 +138,7 @@
 ### Dec 25th
 
 * [Age and Sex Analysis Of Microsoft USA MVPs](2016-12-25-Jamie_Dixon/index.md)
+* [Purity in an impure language with the free monad](2016-12-25-Leif_Battermann/index.md)
 
 
 
