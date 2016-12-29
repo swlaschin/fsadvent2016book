@@ -142,4 +142,5 @@
 
 ### Dec 26th
 
+* [Implementing Two-Factor Authentication in Suave](2016-12-26-Tamizh_Vendan/index.md)
 * [Implementing Pong in a functional manner with Fable](2016-12-26-Marcel_Schwark/index.md)
