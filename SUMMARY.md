@@ -144,3 +144,7 @@
 
 * [Implementing Two-Factor Authentication in Suave](2016-12-26-Tamizh_Vendan/index.md)
 * [Implementing Pong in a functional manner with Fable](2016-12-26-Marcel_Schwark/index.md)
+
+### Dec 27th
+
+* [Getting Up and Running with FsLab for Data Science](2016-12-27-Jon_Wood/index.md)
