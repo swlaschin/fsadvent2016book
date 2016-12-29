@@ -148,3 +148,10 @@
 ### Dec 27th
 
 * [Getting Up and Running with FsLab for Data Science](2016-12-27-Jon_Wood/index.md)
+
+### Dec 28th
+
+### Dec 29th
+
+* [F# Advent: F# 4.0 function first constructor](2016-12-29-Eriawan_Kusumawardho/index.md)
+
