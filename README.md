@@ -6,6 +6,8 @@ This ebook collects these posts in one convenient place, with the goal of raisin
 
 The book is free to download, but if you find it useful, please donate using one of the the links below:
 
+
+* <a href="https://fsharp.nationbuilder.com/donate" style="color:red">Donate to the F# foundation</a>
 * <a href="https://supporters.eff.org/donate/" style="color:red">Donate to the EFF to help protect digital privacy and free expression</a>
 * <a href="https://www.paypal.com/uk/fundraiser/105888939759373249" style="color:red">Donate to the UK charity of your choice using PayPal Giving Fund</a>
 
