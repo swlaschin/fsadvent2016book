@@ -115,6 +115,7 @@
 ### Dec 20th
 
 * [reF#actoring: rewriting an actor in F#](2016-12-20-Vagif_Abilov/index.md)
+* [Feeding On F#](2016-12-20-Tea_Driven_Development/index.md)
 
 ### Dec 21st
 
