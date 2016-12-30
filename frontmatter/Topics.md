@@ -13,6 +13,7 @@ If you are interested in certain topics only, this index may help:
 * [Using F# on both the frontend and the backend](../2016-12-06-Daniel_Bachler/index.md)
 * [Functional approaches to dependency injection](../2016-12-05-Scott_Wlaschin/index.md)
 * [The magic of type providers](../2016-12-24-Roman_Nevolin/index.md)
+* [F# Advent: F# 4.0 function first constructor](../2016-12-29-Eriawan_Kusumawardho/index.md)
 
 **General techniques**
 
@@ -27,6 +28,7 @@ If you are interested in certain topics only, this index may help:
 * [Advent 2016](../2016-12-16-Michael_Newton/index.md)
 * [Accessing native C libraries on Linux with F# and .Net Core](../2016-12-17-Jan_Schiefer/index.md)
 * [The magic of type providers](../2016-12-24-Roman_Nevolin/index.md)
+* [Feeding On F#](../2016-12-20-Tea_Driven_Development/index.md)
 
 **Tools/Compiler/Build/Operations**
 
@@ -55,6 +57,7 @@ If you are interested in certain topics only, this index may help:
 * [Describing images in your favorite human language](../2016-12-07-Edgar_Sanchez/index.md)
 * [Epic Adventure using F#](../2016-12-17-Kunjan_Dalal/index.md)
 * [Age and Sex Analysis Of Microsoft USA MVPs](../2016-12-25-Jamie_Dixon/index.md)
+* [Getting Up and Running with FsLab for Data Science](../2016-12-27-Jon_Wood/index.md)
 
 **Front-end, desktop, and web development**
 
@@ -67,11 +70,14 @@ If you are interested in certain topics only, this index may help:
 * [Running Suave in ASP.NET Core (and on top of Kestrel)](../2016-12-15-Dustin_Moris_Gorski/index.md)
 * [Christmas Trees in WPF, 2016 Edition](../2016-12-15-Reed_Copsey_Jr/index.md)
 * [Hello fable-import-sharepoint](../2016-12-22-David_Podhola/index.md)
+* [Implementing Pong in a functional manner with Fable](../2016-12-26-Marcel_Schwark/index.md)
+* [Implementing Two-Factor Authentication in Suave](../2016-12-26-Tamizh_Vendan/index.md)
 
 **Games**
 
 * [Asterisk Game in F# and WPF](../2016-12-06-Mark_Heath/index.md)
 * [When Playstation meets F\#, PSX |> Pi](../2016-12-24-Ross_McKinlay_Andrea_McAts/index.md)
+* [Implementing Pong in a functional manner with Fable](../2016-12-26-Marcel_Schwark/index.md)
 
 **Algorithms/Machine learning**
 
@@ -88,15 +94,3 @@ If you are interested in certain topics only, this index may help:
 **Hardware**
 
 * [When Playstation meets F\#, PSX |> Pi](../2016-12-24-Ross_McKinlay_Andrea_McAts/index.md)
-
-
-
-
-
-
-
-
-
-
-
-
