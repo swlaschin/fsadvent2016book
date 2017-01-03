@@ -159,3 +159,7 @@
 ### Dec 30th
 
 * [Tips & Tricks to Improve Your F# Library’s Public API](2016-12-30-Paulmichael_Blasucci/index.md)
+
+### Dec 31st
+
+* [Simple reactive scenarios with WebSharper](2016-12-31-Adam_Granicz/index.md)
