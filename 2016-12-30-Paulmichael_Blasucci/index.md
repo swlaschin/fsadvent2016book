@@ -24,6 +24,7 @@ What follows are 12 guidelines, listed in descending order of priority, which ea
 F# supports a wider range of possible generic type constraints than either C# or VB. Not matter how useful, or cool, a constraint might seem (sorry, SRTP fans), it’s meaningless if a consumer can’t possibly comply with it. To that end, public APIs should only leverage the following types of constraints:
 
 | Constraint | Syntax |
+| ---- | ---- |
 | Subtype | `type-parameter :> type` |
 | Constructor | `type-parameter : ( new : unit -> 'a )`  |
 | Value Type | `type-parameter : struct` |
