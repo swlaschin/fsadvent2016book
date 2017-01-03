@@ -156,3 +156,6 @@
 
 * [F# Advent: F# 4.0 function first constructor](2016-12-29-Eriawan_Kusumawardho/index.md)
 
+### Dec 30th
+
+* [Tips & Tricks to Improve Your F# Library’s Public API](2016-12-30-Paulmichael_Blasucci/index.md)
