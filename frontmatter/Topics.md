@@ -29,6 +29,7 @@ If you are interested in certain topics only, this index may help:
 * [Accessing native C libraries on Linux with F# and .Net Core](../2016-12-17-Jan_Schiefer/index.md)
 * [The magic of type providers](../2016-12-24-Roman_Nevolin/index.md)
 * [Feeding On F#](../2016-12-20-Tea_Driven_Development/index.md)
+* [Tips & Tricks to Improve Your F# Library’s Public API](../2016-12-30-Paulmichael_Blasucci/index.md)
 
 **Tools/Compiler/Build/Operations**
 
@@ -72,6 +73,7 @@ If you are interested in certain topics only, this index may help:
 * [Hello fable-import-sharepoint](../2016-12-22-David_Podhola/index.md)
 * [Implementing Pong in a functional manner with Fable](../2016-12-26-Marcel_Schwark/index.md)
 * [Implementing Two-Factor Authentication in Suave](../2016-12-26-Tamizh_Vendan/index.md)
+* [Simple reactive scenarios with WebSharper](../2016-12-31-Adam_Granicz/index.md)
 
 **Games**
 
