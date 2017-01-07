@@ -163,3 +163,7 @@
 ### Dec 31st
 
 * [Simple reactive scenarios with WebSharper](2016-12-31-Adam_Granicz/index.md)
+
+### Jan 1st 2017
+
+* [Welcome to 2017! A retrospective of the past year](2017-01-01-FSSF/index.md)

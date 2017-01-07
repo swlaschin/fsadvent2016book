@@ -92,6 +92,7 @@ If you are interested in certain topics only, this index may help:
 **Community Building**
 
 * [Building F# community in Czech Republic](../2016-12-13-Roman_Provaznik/index.md)
+* [Welcome to 2017! A retrospective of the past year](../2017-01-01-FSSF/index.md)
 
 **Hardware**
 
