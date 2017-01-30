@@ -492,7 +492,7 @@ Let’s say we want to switch from an in memory event bus to an external message
 
 ### App.fsx
 
-This file contains the application layer which is partly a REST like, partly an RPC like implementation ([source](https://github.com/battermann/tic-tac-toe-backend/blob/master/src/TicTacToe.Interpreters.fsx)).
+This file contains the application layer which exposes a REST API ([source](https://github.com/battermann/tic-tac-toe-backend/blob/master/src/App.fsx)).
 
 This is already outside the universe of our pure program. Here the interpreter is built:
 
@@ -504,99 +504,72 @@ let interpret free =
         EventStore.interpret
         ReadModel.interpret free
 ```
-        
+
 And the Tic-Tac-Toe programs are interpreted.
 
 Also the application layer is responsible for mapping requests to games and players.
 
-The API is not designed very well. The reason is that this was just a proof of concept and I focused on getting the Tic-Tac-Toe domain right. However the API should be sufficient to play a couple of rounds of Tic-Tac-Toe.
+Since the focus of this post is the free monad pattern and the Tic-Tac-Toe domain, I won't go into much details of the application layer implementation.
 
-**Showing a game**
+The API can be temporarily accessed here: [http://secret-badlands-62551.herokuapp.com/api](http://secret-badlands-62551.herokuapp.com/api).
 
+This is the billboard URL from where the rest of the API can be discovered.
+
+![](ttt.gif)
+
+Here are two example API calls:
+
+#### API: Showing all games
+
+```language-none
+GET /api/games HTTP/1.1
+Host: secret-badlands-62551.herokuapp.com
 ```
-GET http://secret-badlands-62551.herokuapp.com/games/{gameId} HTTP/1.1
+
+#### API: Showing a game
+
+```language-none
+GET /api/games/3af15f36-37d1-4983-9b16-529a2e79bb77 HTTP/1.1
+Host: secret-badlands-62551.herokuapp.com
 ```
 
 Response 200 OK:
 
 ```
-JSON
 {
+    "_links": {
+        "collection": {
+            "href": "http://secret-badlands-62551.herokuapp.com/api/games"
+        },
+        "http://secret-badlands-62551.herokuapp.com/docs/rels/join": {
+            "href": "http://secret-badlands-62551.herokuapp.com/api/games/3af15f36-37d1-4983-9b16-529a2e79bb77/join"
+        },
+        "http://secret-badlands-62551.herokuapp.com/docs/rels/play": {
+            "href": "http://secret-badlands-62551.herokuapp.com/api/games/3af15f36-37d1-4983-9b16-529a2e79bb77/moves"
+        },
+        "self": {
+            "href": "http://secret-badlands-62551.herokuapp.com/api/games/3af15f36-37d1-4983-9b16-529a2e79bb77"
+        }
+    },
     "grid": [
         [
-            "",
             "O",
+            "",
+            ""
+        ],
+        [
+            "",
+            "X",
             ""
         ],
         [
             "",
             "",
             ""
-        ],
-        [
-            "",
-            "",
-            "X"
         ]
     ],
-    "id": "b543fb96-c4b0-4429-aeeb-55892b98694a",
-    "links": [
-        {
-            "href": "http://secret-badlands-62551.herokuapp.com/games/b543fb96-c4b0-4429-aeeb-55892b98694a",
-            "rel": "self"
-        }
-    ],
+    "id": "3af15f36-37d1-4983-9b16-529a2e79bb77",
     "status": "player X to play"
-}
-```
-
-**Showing all games**
-
-```
-GET http://secret-badlands-62551.herokuapp.com/games HTTP/1.1
-```
-
-**Creating a new game**
-
-```
-POST http://secret-badlands-62551.herokuapp.com/games HTTP/1.1
-```
-
-Response
-
-```
-202 Accepted
-
-Location http://secret-badlands-62551.herokuapp.com/games/{gameId}/players/{playerId}
-```
-
-The URL in the location header is a unique URL for identifying player X.
-
-**Joining the game**
-
-```
-PUT https://secret-badlands-62551.herokuapp.com/games/{gameId}/join HTTP/1.1
-```
-
-Response
-
-```
-202 Accepted
-
-Location http://secret-badlands-62551.herokuapp.com/games/{gameId}/players/{playerId}
-```
-
-Dedicated URL for player O.
-
-**Making a play**
-
-```
-PATCH http://secret-badlands-62551.herokuapp.com/games/{gameId}/players/{playerId} HTTP/1.1
-Content-Type: application/json
-
-{
-    "vertical": "vcenter",
-    "horizontal": "right"
 }
 ```
 
@@ -615,7 +588,11 @@ docker build -t tictactoe .
 docker run -d -p 8080:8080 -e PORT=8080 tictactoe
 ```
 
-Also the API can be [temporarily accessed here](https://secret-badlands-62551.herokuapp.com/games).
+Or a docker container with a shared directory can be started e.g. like this:
+
+```
+docker run -it -p 8080:8080 -v $(pwd):/tmp/ttt fsharp/fsharp bin/bash
+```
 
 ## Some remarks about the implementation
 
